@@ -11,7 +11,7 @@ import (
 // SetACLWriterOptionsWithContext return a new context.Context instance with a gocloud.dev/blob.WriterOptions
 // instance used to assign 'acl' permissions for all S3 blob writes. The WriterOptions instance is assigned
 // to the new context with key 'key' and is assumed to be retrieved later by code using blob.NewWriter instances.
-func SetACLWriterOptionsWithContext(ctx context.Context, key string, acl string) context.Context {
+func SetACLWriterOptionsWithContext(ctx context.Context, key interface{}, acl string) context.Context {
 
 	before := func(asFunc func(interface{}) bool) error {
 		
