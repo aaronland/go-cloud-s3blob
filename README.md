@@ -2,6 +2,10 @@
 
 This is thing wrapper around the default `go-cloud` S3 blob opener to check for a `credentials` parameter (in blob URIs) and use it to assign AWS S3 session credentials.
 
+## Important
+
+This package has been superseded by [aaronland/gocloud-blob-s3](https://github.com/aaronland/gocloud-blob-s3) and is no longer maintained.
+
 ## Example
 
 ```			
